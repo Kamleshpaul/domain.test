@@ -21,7 +21,7 @@ echo
 ############################################################################################
 
 read -p "Enter your email: "  email
-read -p "Enter your domain name without .test or .com: "  domainName
+read -p "Enter your domain name it will add .test automatically: "  domainName
 read -p "Enter your project path: "  projectPath
 
 touch /etc/apache2/sites-available/$domainName.conf
