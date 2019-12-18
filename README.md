@@ -2,7 +2,7 @@
 
 Setp 1 : 
 ```bash
-  git clone https://github.com/Kamleshpaul/linux-apche-test-domain.git  
+  git clone https://github.com/Kamleshpaul/domain.test.git  
 ```
 
 Setp 2 :
