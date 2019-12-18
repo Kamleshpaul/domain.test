@@ -9,7 +9,7 @@ Setp 2 :
 run 
 ```bash 
   cd domain.test
-  sh domain.sh 
+  sudo sh domain.sh 
 ```
 Setp 3 :
 run 
