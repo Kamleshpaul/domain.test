@@ -8,5 +8,14 @@ Setp 1 :
 Setp 2 :
 run 
 ```bash 
-sh domain.sh 
+  cd domain.test
+  sh domain.sh 
 ```
+Setp 3 :
+run 
+```bash 
+  > Enter your email  
+  > Enter your host file name example 
+  > Enter your project path /var/www/html/<project-path>
+```
+### Then it will generate emample.test domain point to  /var/www/html/project-path
