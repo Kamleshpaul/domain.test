@@ -21,8 +21,8 @@ echo
 ############################################################################################
 
 read -p "Enter your email: "  email
-read -p "Enter your host file name: "  domainName
-read -p "Enter your project path"  projectPath
+read -p "Enter your domain name without .test or .com: "  domainName
+read -p "Enter your project path: "  projectPath
 
 touch /etc/apache2/sites-available/$domainName.conf
 
