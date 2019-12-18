@@ -12,7 +12,7 @@ run
   sudo sh domain.sh 
 ```
 Setp 3 :
-run 
+follow
 ```bash 
   > Enter your email  
   > Enter your host file name example 
