@@ -14,8 +14,8 @@ run
 Setp 3 :
 follow
 ```bash 
-  > Enter your email  
-  > Enter your host file name example 
+  > Enter your email: example@mail.com
+  > Enter your domain name it will add .test automatically : example
   > Enter your project path /var/www/html/<project-path>
 ```
-### Then it will generate emample.test domain point to  /var/www/html/project-path
+### Then it will generate example.test domain point to  /var/www/html/project-path
