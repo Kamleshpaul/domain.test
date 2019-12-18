@@ -20,9 +20,27 @@ echo  "** Create local .test domain for development **\nDon't forget to give fee
 echo
 ############################################################################################
 
-read -p "Enter your email: "  email
-read -p "Enter your domain name it will add .test automatically: "  domainName
-read -p "Enter your project path: "  projectPath
+printf '\e[1;34m%-6s\e[m' "Enter your email : "
+read email
+while [ -z ${email} ]; do
+	  printf '\e[1;34m%-6s\e[m' "Email is Required : "
+    read email
+done
+
+printf '\e[1;34m%-6s\e[m' "Enter your domain name it will add .test automatically : "
+read domainName
+while [ -z ${domainName} ]; do
+	  printf '\e[1;34m%-6s\e[m' "Domain name is Required : "
+    read domainName
+done
+
+printf '\e[1;34m%-6s\e[m' "Enter your project path : "
+read projectPath
+while [ -z ${projectPath} ]; do
+	  printf '\e[1;34m%-6s\e[m' "Project path name is Required : "
+    read projectPath
+done
+
 
 touch /etc/apache2/sites-available/$domainName.conf
 
@@ -45,5 +63,6 @@ EOF
 echo "127.0.1.1 $domainName.test" >> /etc/hosts
 
 a2ensite $domainName.conf enable
-
 service apache2 restart
+
+echo  "\033[31m  $domainName.test   created \033[m"
